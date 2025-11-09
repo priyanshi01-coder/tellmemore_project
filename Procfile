@@ -1,1 +1,1 @@
-web: gunicorn TellmeMore.wsgi:application --bind 0.0.0.0:$PORT
+web: gunicorn TellmeMore.wsgi --log-file -
