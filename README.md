@@ -164,7 +164,7 @@ A comprehensive Django-based mock interview system that uses Google's Gemini AI 
 - Auto-save session progress
 - Real-time score calculation
 - Contextual question adaptation
-- Performance trend analysis
+- Performance trend analysis 
 
 ## 🎨 UI/UX Features
 
