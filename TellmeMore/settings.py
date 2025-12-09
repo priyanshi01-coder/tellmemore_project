@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-api_key = os.getenv("AIzaSyBGejYVjDAPJUBNBHk_nlyxlzbyAtue-hM")
+api_key = os.getenv("AIzaSyDukr3FvnMwToZrLf3WR4PWXrAACI1XgdU")
 
 #===============================
 
