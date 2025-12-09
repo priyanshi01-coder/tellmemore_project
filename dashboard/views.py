@@ -230,12 +230,17 @@ def profile_edit_view(request):
     })
 
 # Configure Gemini API
+from django.conf import settings
+import google.generativeai as genai
+
+# Configure Gemini API
 try:
-    genai.configure(api_key="AIzaSyDukr3FvnMwToZrLf3WR4PWXrAACI1XgdU")
+    genai.configure(api_key=settings.GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-2.0-flash')
 except Exception as e:
     model = None
     print(f"Gemini API configuration failed: {e}")
+
 
 # Resume parsing functionality
 def parse_resume_text(file):
