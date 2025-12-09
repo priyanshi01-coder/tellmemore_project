@@ -231,7 +231,7 @@ def profile_edit_view(request):
 
 # Configure Gemini API
 try:
-    genai.configure(api_key="AIzaSyBGejYVjDAPJUBNBHk_nlyxlzbyAtue-hM")
+    genai.configure(api_key="AIzaSyDukr3FvnMwToZrLf3WR4PWXrAACI1XgdU")
     model = genai.GenerativeModel('gemini-2.0-flash')
 except Exception as e:
     model = None
