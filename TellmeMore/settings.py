@@ -15,7 +15,9 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-api_key = os.getenv("AIzaSyD7nJWvbYo38rD7nk1K-xAZ8pTs5P-0bfI")
+GEMINI_API_KEY = os.getenv("AIzaSyAGcp9fYOA-md6dxx5SUmLqk7VJrVp-HYM")
+
+
 
 #===============================
 
