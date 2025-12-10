@@ -19,11 +19,11 @@ from django.urls import path , include
 from django.conf.urls.static import static
 from django.conf import settings
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include("core.urls")),
-    path('dashboard/', include('dashboard.urls')),
-    path("accounts/",include("django.contrib.auth.urls")),
-]
+22 urlpatterns = [
+23     path('admin/', admin.site.urls),
+24     path('', include('core.urls')),
+25     path('dashboard/', include('dashboard.urls')),
+26     path('accounts/', include('django.contrib.auth.urls')),
+27 ] # The list is correctly closed here.
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+28 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # ADD THE EQUALS SIGN HERE!
