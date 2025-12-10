@@ -33,7 +33,7 @@ class InterviewDetails(models.Model):
         ('easy', 'Easy'),
         ('medium', 'Medium'),
         ('hard', 'Hard'),
-    ]
+    ]`
     difficulty = models.CharField(max_length=10, choices=DIFFICULTY_CHOICES, default='medium')
 
     MODE_CHOICES = [
